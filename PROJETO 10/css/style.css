@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 60px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #2563eb;
+}
+
+/* pagina incial topo */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  background: url('../asset/hero.jpg') center/cover no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 18px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.secondary {
+  background: #fff;
+  color: #000;
+}
+
+/* BENEFITS */
+
+.benefits {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+
+  text-align: left;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #2563eb;
+}
+
+.card p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* SOBRE */
+
+.banner {
+  width: 100%;
+  height: 70vh;
+
+  background: url('../asset/sobre-banner.jpg') center/cover no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 34px;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 30px;
+
+  padding: 80px 60px;
+
+  background: #fff;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h2 {
+  color: #2563eb;
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.stat-box p {
+  font-size: 24px;
+  color: #555;
+}
+
+/* CONTENT */
+
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  padding: 100px 60px;
+}
+
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.text p {
+  font-size: 24px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ROTEIRO */
+
+.roteiro-hero {
+  width: 100%;
+  height: 60vh;
+
+  background: url('../asset/roteiro-banner.jpg') center/cover no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.roteiro-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.roteiro-hero-content h1 {
+  font-size: 60 px;
+  margin-bottom: 20px;
+}
+
+.roteiro-hero-content p {
+  font-size: 28px;
+}
+
+.roteiro-intro {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.roteiro-intro p {
+  max-width: 1100px;
+  margin: auto;
+
+  font-size: 28px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.dia-card {
+  width: 75%;
+
+  margin: 40px auto;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dia-topo {
+  background: #2563eb;
+  color: #fff;
+
+  padding: 35px 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dia-topo i {
+  font-size: 40px;
+}
+
+.dia-topo h2 {
+  font-size: 42px;
+}
+
+.dia-topo span {
+  font-size: 24px;
+}
+
+.atividade {
+  display: flex;
+  gap: 30px;
+
+  padding: 40px;
+}
+
+.icone-box {
+  width: 60px;
+  height: 70px;
+
+  background: #dbeafe;
+
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.icone-box i {
+  color: #2563eb;
+  font-size: 30px;
+}
+
+.atividade-texto span {
+  color: #666;
+  font-size: 22px;
+}
+
+.atividade-texto h3 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.atividade-texto p {
+  font-size: 24px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* CONTATO */
+
+.contato-hero {
+  width: 100%;
+  height: 60vh;
+
+  background: url('../asset/contato-banner.jpg') center/cover no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.contato-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.contato-content h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.contato-content p {
+  font-size: 32px;
+}
+
+.contato-cards {
+  padding: 100px 60px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.contato-card {
+  background: #fff;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contato-card i {
+  color: #2563eb;
+  font-size: 30px;
+
+  margin-bottom: 30px;
+}
+
+.contato-card h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contato-card p {
+  font-size: 24px;
+  color: #444;
+  line-height: 1.6;
+}
